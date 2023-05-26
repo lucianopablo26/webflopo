@@ -1,117 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flopo's</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="#">Flopo's</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/galeria.html">Galeria</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#nuestra-cocina">Nuestra Cocina</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#productos">Productos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/contacts.html">Contactos</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <link
+      rel="stylesheet"
+      href="./css/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material=icons"
+    />
+  </head>
+  <body>
+    <div class="container-index">
+      <header class="nav-wraper">
+        <nav>
+          <div class="logo" id="Inicio">Flopo's</div>
+          <input type="checkbox" name="" id="toggle" />
+          <label for="toggle"><i class="material-icons">menu</i></label>
+          <div class="menu">
+            <ul>
+                <li><a href="./pages/galeria.html">Galeria</a></li>
+                <li><a href="#Nuestra cocina">Nuestra Cocina</a></li>
+                <li><a href="#Productos">Productos</a></li>
+                <li><a href="./pages/contacts.html">Contactos</a></li>
+            </ul>
+          </div>
         </nav>
-    </header>
-
-    <main>
-        <section class="py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card mb-3">
-                            <img src="./assets/img/Empanadas.jpeg" class="card-img-top" alt="Empanadas">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="./pages/Menu.html">Empanadas</a></h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card mb-3">
-                            <img src="./assets/img/Hamburguer.jpeg" class="card-img-top" alt="Hamburguer">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="./pages/Menu.html">Hamburguer</a></h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card mb-3">
-                            <img src="./assets/img/Pizzas.jpeg" class="card-img-top" alt="Pizza">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="./pages/Menu.html">Pizzas</a></h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      </header>
+      <main>
+        <section class="background1">
+          <div class="row justify-content-around">
+            <div class="card col-md-3">
+              <img
+                src="./assets/img/Empanadas.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Empanadas</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make
+                  up the bulk of the card's content.
+                </p>
+                <a href="./flopoweb/Menu.html" class="btn btn-primary"
+                  >Menu</a
+                >
+              </div>
             </div>
-        </section>
-
-        <section class="py-5">
-            <div class="container">
-                <div class="nuestraCocina">
-                    <h2 id="nuestra-cocina">Nuestra cocina</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem recusandae minima, fuga voluptate ea, expedita rem nobis unde illo laudantium officia cupiditate error quod similique iusto, possimus facilis. Dolores, tempore!</p>
-                    <h3 id="productos">Productos</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat eos illo corrupti eaque accusamus unde officia odit, quod voluptate ullam iure quasi maiores corporis maxime ad cumque dignissimos vitae quam!</p>
-                </div>        
+            <div class="card col-md-3">
+              <img
+                src="./assets/img/Hamburguer.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Hamburguer</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make
+                  up the bulk of the card's content.
+                </p>
+                <a href="./flopoweb/Menu.html" class="btn btn-primary"
+                  >Menu</a
+                >
+              </div>
             </div>
-        </section>
-    </main>
-
-    <footer class="bg-light py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h3>Flopo's</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus excepturi. Esse aut fugiat corporis accusamus laborum, vel autem vero blanditiis aspernatur quas, minus ipsum aliquid error quidem qui totam.</p>
-                </div>
-                <div class="col-md-2">
-                    <h4>Menu</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="../index.html#nuestra-cocina">Nuestra cocina</a></li>
-                        <li><a href="../index.html#productos">Productos</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="">Inicio</a></li>
-                        <li><a href="#nuestra-cocina">Nuestra cocina</a></li>
-                        <li><a href="#productos">Productos</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h5>Social</h5>
-                    <img id="Facebook" src="../assets/img/Facebook.jpg" alt="Facebook">
-                    <img src="../assets/img/Instagram.jpg" alt="Instagram">
-                    <img src="../assets/img/whatsapp.jpeg" alt="WhatsApp">
-                </div>
-            </div>
+            <div class="card col-md-3">
+              <img
+                src="./assets/img/Pizzas.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pizzas</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make
+                  up the bulk of the card's content.
+                </p>
+                <a href="./flopoweb/Menu.html" class="btn btn-primary"
+                  >Menu</a
+                >
+          </div>
         </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <section>
+            <div class="nuestraCocina">
+                <h2 id="Nuestra cocina">Nuestra cocina</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem recusandae minima, <br> fuga voluptate ea, expedita rem nobis unde illo laudantium officia <br> cupiditate error quod similique iusto, possimus facilis. Dolores, tempore!</p>
+                <h3 id="Productos">Productos</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat eos illo corrupti eaque <br> accusamus unde officia odit, quod voluptate ullam iure quasi maiores <br> corporis maxime ad cumque dignissimos vitae quam!</p>
+            </div>        
+        </section>
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <h4>About Us</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et ligula vel libero elementum bibendum id eget massa. Nunc viverra purus sit amet mauris feugiat, nec suscipit libero hendrerit.</p>
+              </div>
+              <div class="col-md-4">
+                <h4>Latest News</h4>
+                <ul class="list-unstyled">
+                  <li><a href="#">New product launch</a></li>
+                  <li><a href="#">Upcoming events</a></li>
+                  <li><a href="#">Company updates</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h4>Contact Us</h4>
+                <ul class="list-unstyled">
+                  <li><i class="fa fa-map-marker"></i> 123 Main St, City, State ZIP</li>
+                  <li><i class="fa fa-phone"></i> (123) 456-7890</li>
+                  <li><i class="fa fa-envelope"></i> info@example.com</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <hr>
+                <p class="text-center">&copy; 2023 Flopo's. All rights reserved.</p>
+              </div>
+            </div>
+          </div>
+        </footer>        
+    </div>
 </body>
 </html>

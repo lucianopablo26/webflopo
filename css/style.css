@@ -1,50 +1,193 @@
-.container-index {
-    padding: 20px;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container-index{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 80% auto;
+}
+header{
+    width: 100%;
+    margin: auto;
+    font-size: 1rem;
+    background-color: #DCDDB6;
+    padding: 1rem;
+}
+.nav-wraper{
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+ 
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a:hover {
+    color: #fff;
+  }
+ 
+.logo{
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding: 0rem 5rem;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-size: 25px;
+    color: black;    
+}
+nav #toggle, nav label{
+    display: none;
+}
+ 
+@media (max-width: 768px){
+    nav .menu{
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    .menu ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem 0;
+ 
+    }
+    nav label{
+        display: inline-flex;
+        color: black;
+        cursor: pointer;
+    }
+    nav #toggle:checked ~ .menu{
+        height: 100%;
+    }
+}
+
+  /* Body styles */
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+}
+
+.card{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    background-color: #DCDDB6;
+}
+.card-img-top{
+    padding: 0.7rem;    
+}
+.card-body{
+    text-align: center;
+}
+.card-title{
+    font-size: 25px;
+}
+.checklist{
+    text-align: center;
+    font-size: 15px;
+}
+  /* Navbar styles */
+  .navbar {
+    background-color: #f8f9fa;
   }
   
   .navbar-brand {
-    font-size: 24px;
+    font-weight: bold;
   }
   
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+  .navbar-nav .nav-link {
+    font-weight: 500;
+    color: #333;
   }
   
-  .cards img {
-    width: 100%;
-    height: auto;
-  }
-  
+  /* Main section styles */
   .nuestraCocina {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nuestraCocina h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .nuestraCocina p {
+    font-size: 1.2rem;
+    line-height: 1.5;
     text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .nuestraCocina h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  h2 {
+    font-size: 28px;
+    font-weight: bold;
     margin-bottom: 20px;
   }
   
-  footer {
-    color: #fff;
+  h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
   }
   
-  footer h3, footer h4, footer h5 {
-    color: #fff;
+  p {
     margin-bottom: 20px;
   }
   
-  footer ul {
-    list-style-type: none;
-    padding: 0;
-  }
+  /* Footer styles */
+ 
+  footer{
+    background-color: black;
+    display: flex;
+    color: #DCDDB6;
+    text-align: center;
+}
   
-  footer ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .navbar-nav .nav-link {
+      font-size: 14px;
+    }
   
-  footer .social img {
-    width: 30px;
-    height: auto;
-    margin-right: 10px;
+    h2 {
+      font-size: 24px;
+    }
+  
+    h3 {
+      font-size: 20px;
+    }
   }
   

@@ -5,95 +5,102 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuestracocina</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-    <header class="header">
-        <div>
+    <link
+      rel="stylesheet"
+      href="../css/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material=icons"
+    />
+  </head>
+  <body>
+    <div class="container-index">
+      <header class="nav-wraper">
         <nav>
+          <div class="logo" id="Inicio">Flopo's</div>
+          <input type="checkbox" name="" id="toggle" />
+          <label for="toggle"><i class="material-icons">menu</i></label>
+          <div class="menu">
             <ul>
-                <div class="h1"><h1>Flopo's</h1></div>
                 <li><a href="./galeria.html">Galeria</a></li>
-                <li><a href="../index.html#Nuestra cocina">Nuestra Cocina</a></li>
-                <li><a href="../index.html#Productos">Productos</a></li>
-                <li><a href="./pages/contacts.html">Contactos</a></li>
+                <li><a href="#Nuestra cocina">Nuestra Cocina</a></li>
+                <li><a href="#Productos">Productos</a></li>
+                <li><a href="./contacts.html">Contactos</a></li>
             </ul>
+          </div>
         </nav>
-        </div>
     </header>
-    <main class="main1">
-        <section>
-            <div>
-                <img src="../assets/img/Empanadas.jpeg" alt="">
-                <div>
-                    <nav>
-                        <li class="cardCuerpo">
-                            <h2>Empanadas</h2>
-                            <div>
-                                <fieldset>
-                                    <label for="Carne">Carne</label>
-                                    <input type="checkbox" name="Carne" id="Carne">
-                                    <label for="Verdura">Verdura</label>
-                                    <input type="checkbox" name="Verdura" id="Verdura">
-                                    <label for="Caprese">Caprese</label>
-                                    <input type="checkbox" name="Caprese" id="Caprese">
-                                    <label for="J&Q">J&Q</label>
-                                    <input type="checkbox" name="J&Q" id="J&Q">
-                                </fieldset>
-                                </div>
-                        </li>
-                    </nav>
+    <main>
+        <section class="background1">
+            <div class="row justify-content-around">
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/img/Empanadas.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Empanadas</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <fieldset class="checklist">
+                        <label for="Carne">Carne</label>
+                        <input type="checkbox" name="Carne" id="Carne">
+                        <label for="Verdura">Verdura</label>
+                        <input type="checkbox" name="Verdura" id="Verdura">
+                        <label for="Caprese">Caprese</label>
+                        <input type="checkbox" name="Caprese" id="Caprese">
+                        <label for="J&Q">J&Q</label>
+                        <input type="checkbox" name="J&Q" id="J&Q">
+                    </fieldset>
+                </ul>
+                <div class="card-body">
+                 <a href="/comprar.html" class="card-link">buy</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="../assets/img/Hamburguer.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Hamburguer</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <fieldset class="checklist">
+                        <label for="Carne">Carne</label>
+                        <input type="checkbox" name="Carne" id="Carne">
+                        <label for="Verdura">Verdura</label>
+                        <input type="checkbox" name="Verdura" id="Verdura">
+                        <label for="Caprese">Caprese</label>
+                        <input type="checkbox" name="Caprese" id="Caprese">
+                        <label for="J&Q">J&Q</label>
+                        <input type="checkbox" name="J&Q" id="J&Q">
+                    </fieldset>
+                </ul>
+                <div class="card-body">
+                 <a href="./comprar.html" class="card-link">buy</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="../assets/img/Pizzas.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Pizza</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <fieldset class="checklist">
+                        <label for="Carne">Carne</label>
+                        <input type="checkbox" name="Carne" id="Carne">
+                        <label for="Verdura">Verdura</label>
+                        <input type="checkbox" name="Verdura" id="Verdura">
+                        <label for="Caprese">Caprese</label>
+                        <input type="checkbox" name="Caprese" id="Caprese">
+                        <label for="J&Q">J&Q</label>
+                        <input type="checkbox" name="J&Q" id="J&Q">
+                    </fieldset>
+                </ul>
+                <div class="card-body">
+                  <a href="./comprar.html" class="card-link">buy</a>
                 </div>
             </div>
-            <div>
-                <img src="../assets/img/Hamburguer.jpeg" alt="">
-                <div>
-                    <nav>
-                        <li class="cardCuerpo">
-                            <h3>Hamburguer</h3>
-                            <div>
-                            <fieldset>
-                                <label for="Carne">Carne</label>
-                                <input type="checkbox" name="Carne" id="Carne">
-                                <label for="Verdura">Verdura</label>
-                                <input type="checkbox" name="Verdura" id="Verdura">
-                                <label for="Caprese">Caprese</label>
-                                <input type="checkbox" name="Caprese" id="Caprese">
-                                <label for="J&Q">J&Q</label>
-                                <input type="checkbox" name="J&Q" id="J&Q">
-                            </fieldset>
-                            </div>
-                        </li>
-                    </nav>
-                </div>
-            </div>
-            <div>
-                <img src="../assets/img/Pizzas.jpeg" alt="">
-                <div>
-                    <nav>
-                        <li class="cardCuerpo">
-                            <h4>Pizzas</h4>
-                            <div>
-                                <fieldset>
-                                    <label for="Carne">Carne</label>
-                                    <input type="checkbox" name="Carne" id="Carne">
-                                    <label for="Verdura">Verdura</label>
-                                    <input type="checkbox" name="Verdura" id="Verdura">
-                                    <label for="Caprese">Caprese</label>
-                                    <input type="checkbox" name="Caprese" id="Caprese">
-                                    <label for="J&Q">J&Q</label>
-                                    <input type="checkbox" name="J&Q" id="J&Q">
-                                </fieldset>
-                                </div>
-                        </li>
-                    </nav>
-                </div>
-            </div>
-            <section>
-                <section class="productos">
-                    <img src="" alt="Buy">
-                    <a href="./comprar.html" class="btn-comprar">Comprar</a>
-                  </section>
             <section>
                 <div class="nuestraCocina">
                     <h2 id="Nuestra cocina">Nuestra cocina</h2>
@@ -101,37 +108,39 @@
                     <h3 id="Productos">Productos</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat eos illo corrupti eaque <br> accusamus unde officia odit, quod voluptate ullam iure quasi maiores <br> corporis maxime ad cumque dignissimos vitae quam!</p>
                 </div>        
-            </section>
+            </section>     
     </main>
-</body>
-<footer>
-    <div class="footer-content">
-      <div class="footer-section about">
-        <h3>Flopo's</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus excepturi. Esse aut fugiat corporis accusamus laborum, vel autem vero blanditiis aspernatur quas, minus ipsum aliquid error quidem qui totam.</p>
-      </div>
-      <div class="footer-section links">
-        <h4>Menu</h4>
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="../index.html#Nuestra cocina">Nuestra cocina</a></li>
-          <li><a href="../index.html#Productos">Productos</a></li>
-        </ul>
-      </div>
-      <div class="footer-section links">
-        <h5>Links</h5>
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="../index.html#Nuestra cocina">Nuestra cocina</a></li>
-          <li><a href="../index.html#Productos">Productos</a></li>
-        </ul>
-      </div>
-      <div class="footer-section social">
-        <img id="Facebook" src="../assets/img/Facebook.jpg" alt="Facebook">
-        <img src="../assets/img/Instagram.jpg" alt="Instagram">
-        <img src="../assets/img/whatsapp.jpeg" alt="whatsapp">
-      </div>
-    </div>
-  </footer>
-  
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h4>About Us</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et ligula vel libero elementum bibendum id eget massa. Nunc viverra purus sit amet mauris feugiat, nec suscipit libero hendrerit.</p>
+            </div>
+            <div class="col-md-4">
+              <h4>Latest News</h4>
+              <ul class="list-unstyled">
+                <li><a href="#">New product launch</a></li>
+                <li><a href="#">Upcoming events</a></li>
+                <li><a href="#">Company updates</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h4>Contact Us</h4>
+              <ul class="list-unstyled">
+                <li><i class="fa fa-map-marker"></i> 123 Main St, City, State ZIP</li>
+                <li><i class="fa fa-phone"></i> (123) 456-7890</li>
+                <li><i class="fa fa-envelope"></i> info@example.com</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <hr>
+              <p class="text-center">&copy; 2023 Flopo's. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer> 
+</body>  
 </html>

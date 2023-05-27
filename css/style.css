@@ -175,7 +175,7 @@ body {
     margin-bottom: 5rem;
     background-color: #DCDDB6;
   }
-  
+
 
   /*.btn-comprar {
       display: flex;
@@ -248,7 +248,32 @@ body {
     .item:hover img {
       transform: scale(1.1);
     }
-    
+     main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .contact-card {
+      max-width: 400px;
+      padding: 20px;
+      background-color: #f8f9fa;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-card h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .contact-card form h3 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
     
   
   /* Footer styles */

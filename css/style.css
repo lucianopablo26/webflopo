@@ -166,15 +166,18 @@ body {
   p {
     margin-bottom: 20px;
   }
-  .main1 {
+  .form-comprar {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding: 1px 1px 1px 1px;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    background-color: #DCDDB6;
   }
   
-  .btn-comprar {
+
+  /*.btn-comprar {
       display: flex;
       padding: 12px 24px;
       background-color: #4CAF50;
@@ -188,7 +191,7 @@ body {
     
     .btn-comprar:hover {
       background-color: #3e8e41;
-    }
+    }*/
     
   
   @media screen and (max-width: 767px) {

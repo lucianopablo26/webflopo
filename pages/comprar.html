@@ -5,24 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comprar</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-    <body>
-        <header>
-        <div>
+    <link
+      rel="stylesheet"
+      href="../css/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material=icons"
+    />
+  </head>
+  <body>
+    <div class="">
+      <header class="nav-wraper">
         <nav>
+          <div class="logo" id="Inicio">Flopo's</div>
+          <input type="checkbox" name="" id="toggle" />
+          <label for="toggle"><i class="material-icons">menu</i></label>
+          <div class="menu">
             <ul>
-                <div class="h1"><h1>Flopo's</h1></div>
                 <li><a href="./galeria.html">Galeria</a></li>
-                <li><a href="../index.html#Nuestra cocina">Nuestra Cocina</a></li>
-                <li><a href="../index.html#Productos">Productos</a></li>
+                <li><a href="#Nuestra cocina">Nuestra Cocina</a></li>
+                <li><a href="#Productos">Productos</a></li>
                 <li><a href="./contacts.html">Contactos</a></li>
             </ul>
+          </div>
         </nav>
-        </div>
-        </header>
-        <main class="main1">
-            <section>
+    </header>
+        <main class="">
+            <section class="form-comprar">
                 <form action="" method="post">
                     <fieldset>
                         <legend>Datos personales</legend>
@@ -67,35 +78,38 @@
                 </div>        
             </section>
         </main>
+        <footer>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <h4>About Us</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et ligula vel libero elementum bibendum id eget massa. Nunc viverra purus sit amet mauris feugiat, nec suscipit libero hendrerit.</p>
+                </div>
+                <div class="col-md-4">
+                  <h4>Latest News</h4>
+                  <ul class="list-unstyled">
+                    <li><a href="#">New product launch</a></li>
+                    <li><a href="#">Upcoming events</a></li>
+                    <li><a href="#">Company updates</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <h4>Contact Us</h4>
+                  <ul class="list-unstyled">
+                    <li><i class="fa fa-map-marker"></i> 123 Main St, City, State ZIP</li>
+                    <li><i class="fa fa-phone"></i> (123) 456-7890</li>
+                    <li><i class="fa fa-envelope"></i> info@example.com</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <hr>
+                  <p class="text-center">&copy; 2023 Flopo's. All rights reserved.</p>
+                </div>
+              </div>
+            </div>
+          </footer>        
+      </div>
     </body>
-    <footer>
-        <div class="footer-content">
-          <div class="footer-section about">
-            <h3>Flopo's</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, natus excepturi. Esse aut fugiat corporis accusamus laborum, vel autem vero blanditiis aspernatur quas, minus ipsum aliquid error quidem qui totam.</p>
-          </div>
-          <div class="footer-section links">
-            <h4>Menu</h4>
-            <ul>
-              <li><a href="../index.html">Inicio</a></li>
-              <li><a href="../index.html#Nuestra cocina">Nuestra cocina</a></li>
-              <li><a href="../index.html#Productos">Productos</a></li>
-            </ul>
-          </div>
-          <div class="footer-section links">
-            <h5>Links</h5>
-            <ul>
-              <li><a href="../index.html">Inicio</a></li>
-              <li><a href="../index.html#Nuestra cocina">Nuestra cocina</a></li>
-              <li><a href="../index.html#Productos">Productos</a></li>
-            </ul>
-          </div>
-          <div class="footer-section social">
-            <img id="Facebook" src="../assets/img/Facebook.jpg" alt="Facebook">
-            <img src="../assets/img/Instagram.jpg" alt="Instagram">
-            <img src="../assets/img/whatsapp.jpeg" alt="whatsapp">
-          </div>
-        </div>
-      </footer>
-      
-</html>
+    </html>

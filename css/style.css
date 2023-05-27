@@ -3,15 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-.container-index{
-    display: grid;
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    padding: 1rem;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 80% auto;
-}
+
 header{
     width: 100%;
     margin: auto;
@@ -248,14 +240,14 @@ body {
     .item:hover img {
       transform: scale(1.1);
     }
-     main {
+     .main-contacts {
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
     }
 
-    .contact-card {
+    .contact-card-contacts {
       max-width: 400px;
       padding: 20px;
       background-color: #f8f9fa;
@@ -263,13 +255,13 @@ body {
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
-    .contact-card h2 {
+    .contact-card-contacts h2 {
       font-size: 24px;
       font-weight: bold;
       margin-bottom: 10px;
     }
 
-    .contact-card form h3 {
+    .contact-card-contacts form h3 {
       font-size: 18px;
       font-weight: bold;
       margin-bottom: 10px;

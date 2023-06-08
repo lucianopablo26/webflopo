@@ -4,44 +4,42 @@ header{
     font-size: 1rem;
     background-color: $color-base;
     padding: 0.5rem;
-  }
-  .nav-wraper{
-    width: 100%;
-    margin: auto;
-    padding: 1rem;
-  }
-  
-  nav{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-  nav a:hover {
-    color: #fff;
-  }
-  
-  .logo{
-    font-weight: 700;
-    text-decoration: none;
-    color: $font-color;
-    font-size: 40px;
+   
+    .nav-wraper{
+        width: 100%;
+        margin: auto;
+        padding: 1rem;
+      }
+      nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+      }
+       &:hover {
+        color: black;
+      }
+      .logo{
+        font-weight: 700;
+        text-decoration: none;
+        color: $font-color;
+        font-size: 40px;
   }
   .menu ul{
     list-style: none;
     display: flex;
     gap: 1rem;
     padding: 0rem 5rem;
+    li a{
+        text-decoration: none;
+        font-size: 25px;
+        color: $font-color;    
+      }
   }
-  .menu ul li a{
-    text-decoration: none;
-    font-size: 25px;
-    color: $font-color;    
-  }
+}
   nav #toggle, nav label{
     display: none;
   }
-  
   @media (max-width: 768px){
     nav .menu{
         width: 100%;

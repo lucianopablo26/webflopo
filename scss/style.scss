@@ -1,19 +1,19 @@
 
-//import base
+//import base//
 @import 'base/variables';
 @import 'base/resets';
 
-//import component
+//import component//
+
 @import './components/navbar';
 @import './components/footer';
-//import layout
-@import 'layout/index';
+//import layout//
+
+@import 'layaut/index';
 @import 'layout/comprar';
 @import 'layout/contacto';
 @import 'layout/galeria';
 @import 'layout/menu';
-
-
 
 //Responsive styles
 

@@ -1,10 +1,10 @@
 
 .container {
   @include flex(flex, center, center, 20px,wrap);
-    margin: 20px;
+    margin: 1rem 2rem;
     .item {
-      width: 200px;
-      height: 200px;
+      width: 150px;
+      height: 150px;
       overflow: hidden;
       border-radius: 10px;
       img {

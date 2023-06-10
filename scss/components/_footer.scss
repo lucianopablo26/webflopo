@@ -1,9 +1,7 @@
 footer{
-  display: flex;
+  width: 100%;
   color: $color-base;
   text-align: center;
-  &:container {
-    @include flex (column, center,center,20px, wrap);
-    margin: 20px;
-  }
+  @include flex (column,center,center,20px,wrap);
 }
+  

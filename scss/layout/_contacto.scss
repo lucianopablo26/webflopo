@@ -1,62 +1,27 @@
-
-@media screen and (max-width: 767px) {
-    .card {
-      width: 100%;
-    }
-  }
-  
-  .cardCuerpo {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-    
-    .cardCuerpo h2,
-    .cardCuerpo h3,
-    .cardCuerpo h4 {
-      margin: 0;
-    }
-    
-    .cardCuerpo div {
-      margin: 10px 0;
-    }
-    
-    .productos {
-      margin-top: 20px;
-      text-align: center;
-    }
-    
-    .main-contacts {
-      display: grid;
-      place-items: center;
-      height: 100vh;
-      padding-top: 1rem;
-    }
-  
+.main-contacts {
+    display: grid;
+    place-items: center;
+    height: 100vh;
     .contact-card-contacts {
+      display: grid;
       max-width: 400px;
-      padding: 1rem 1rem;
+      padding: 20px;
       background-color: $color-base;
       border-radius: 5px;
       box-shadow: 0 2px 4px rgba(114, 117, 86, 0.1);
-      display: grid;
       gap: 10px;
+    h2 {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0;
     }
-  
-    .contact-card-contacts h2 {
-      font-size: 24px;
-      font-weight: bold;
-      margin: 0;
+    li {
+      margin-bottom: 0px;
     }
-  
-    .contact-card-contacts ul li {
-      margin-bottom: 5px;
-    }
-  
-    .contact-card-contacts form h3 {
+    h3 {
       font-size: 18px;
       font-weight: bold;
       margin-bottom: 10px;
     }
-    
+  }
+  }

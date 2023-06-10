@@ -2,15 +2,15 @@
     margin-top: 5rem;
     margin-bottom: 5rem;
     background-color: $color-base;
-  }
-.card-img-top{
-    padding: 0.7rem;    
-  }
-.card-body{
-    text-align: center;
-  }
-.card-title{
-    font-size: 25px;
+    .card-img-top{
+      padding: 0.7rem;    
+    }
+  .card-body{
+      text-align: center;
+      .card-title{
+        font-size: 25px;
+      }  
+    }
   }
 .checklist{
     text-align: center;

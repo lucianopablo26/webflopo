@@ -1,17 +1,314 @@
-/* Error: Can't find stylesheet to import.
- *    ,
- * 13 | @import 'layout/comprar';
- *    |         ^^^^^^^^^^^^^^^^
- *    '
- *   scss/style.scss 13:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a    \2577 \a 13 \2502  @import 'layout/comprar';\a    \2502          ^^^^^^^^^^^^^^^^\a    \2575 \a   scss/style.scss 13:9  root stylesheet";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+body {
+  background-image: url(../assets/img/Nuestra\ cocina.jpg);
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  width: 100%;
+  margin: auto;
+  font-size: 1rem;
+  background-color: #DCDDB6;
+  padding: 0.5rem;
+}
+header .nav-wraper {
+  width: 100%;
+  margin: auto;
+  padding: 1rem;
+}
+header nav {
+  display: flex;
+  flex-direction: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+header:hover {
+  color: black;
+}
+header .logo {
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+  font-size: 40px;
+}
+header .menu ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0rem 5rem;
+}
+header .menu ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+nav #toggle, nav label {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  nav .menu {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+  }
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+  }
+  nav label {
+    display: inline-flex;
+    color: black;
+    cursor: pointer;
+  }
+  nav #toggle:checked ~ .menu {
+    height: 100%;
+  }
+}
+footer {
+  display: flex;
+  color: #DCDDB6;
+  text-align: center;
+}
+footer:container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.card {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  background-color: #DCDDB6;
+}
+
+.card-img-top {
+  padding: 0.7rem;
+}
+
+.card-body {
+  text-align: center;
+}
+.card-body .card-title {
+  font-size: 25px;
+}
+
+/* Main section styles */
+section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+section .nuestraCocina {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  background-color: #DCDDB6;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(135, 133, 100, 0.1);
+}
+section .nuestraCocina h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+section .nuestraCocina p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 20px;
+}
+section .nuestraCocina h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.form-comprar {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+form {
+  max-width: 400px;
+  padding: 20px;
+  background-color: #DCDDB6;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(125, 129, 97, 0.1);
+  display: grid;
+  gap: 10px;
+}
+form fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+form legend {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+form label {
+  display: grid;
+  gap: 5px;
+}
+form span {
+  font-weight: bold;
+}
+form input[type=text],
+form input[type=number],
+form input[type=date],
+form input[type=password] {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+form input[type=submit],
+form input[type=reset] {
+  width: 100%;
+  padding: 10px;
+  background-color: #45a050;
+  color: #DCDDB6;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+form input[type=submit]:hover,
+form input[type=reset]:hover {
+  background-color: #598b5f;
+}
+
+@media screen and (max-width: 767px) {
+  .card {
+    width: 100%;
+  }
+}
+.cardCuerpo {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.cardCuerpo h2,
+.cardCuerpo h3,
+.cardCuerpo h4 {
+  margin: 0;
+}
+
+.cardCuerpo div {
+  margin: 10px 0;
+}
+
+.productos {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.main-contacts {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  padding-top: 1rem;
+}
+
+.contact-card-contacts {
+  max-width: 400px;
+  padding: 1rem 1rem;
+  background-color: #DCDDB6;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(114, 117, 86, 0.1);
+  display: grid;
+  gap: 10px;
+}
+
+.contact-card-contacts h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.contact-card-contacts ul li {
+  margin-bottom: 5px;
+}
+
+.contact-card-contacts form h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+.container .item {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.container .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+.container .item img:hover {
+  transform: scale(1.1);
+}
+
+.card {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  background-color: #DCDDB6;
+}
+
+.card-img-top {
+  padding: 0.7rem;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-title {
+  font-size: 25px;
+}
+
+.checklist {
+  text-align: center;
+  font-size: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */

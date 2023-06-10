@@ -8,37 +8,36 @@
   }
 .card-body{
     text-align: center;
-  }
-.card-title{
-    font-size: 25px;
+    .card-title{
+      font-size: 25px;
+    }  
   }
 
   /* Main section styles */
+  section {
+    padding-top: 40px;
+    padding-bottom: 40px;
   .nuestraCocina {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex (column,center,center,15px,wrap);
     background-color: $color-base;
     padding: 2rem;
     border-radius: 5px;
     box-shadow: 0px 2px 5px rgba(135, 133, 100, 0.1);
+    h2 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 1.5;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    h3 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    }
   }
-  
-  .nuestraCocina h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .nuestraCocina p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-  
-  .nuestraCocina h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  

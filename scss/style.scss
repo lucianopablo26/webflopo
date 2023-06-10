@@ -2,31 +2,16 @@
 //import base//
 @import 'base/variables';
 @import 'base/resets';
+@import 'base/utilities';
 
 //import component//
-
 @import './components/navbar';
 @import './components/footer';
-//import layout//
 
-@import 'layaut/index';
+//import layout//
+@import 'layout/mediaqueries';
+@import 'layout/index';
 @import 'layout/comprar';
 @import 'layout/contacto';
 @import 'layout/galeria';
 @import 'layout/menu';
-
-//Responsive styles
-
-@media (max-width: 768px) {
-  .navbar-nav .nav-link {
-    font-size: 14px;
-  }
-
-  h2 {
-    font-size: 24px;
-  }
-
-  h3 {
-    font-size: 20px;
-  }
-}

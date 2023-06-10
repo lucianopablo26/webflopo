@@ -11,10 +11,7 @@ header{
         padding: 1rem;
       }
       nav{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
+        @include flex (flex, space-between,center, 10px, wrap);
       }
        &:hover {
         color: black;
@@ -32,7 +29,7 @@ header{
     padding: 0rem 5rem;
     li a{
         text-decoration: none;
-        font-size: 25px;
+        font-size: 20px;
         color: $font-color;    
       }
   }

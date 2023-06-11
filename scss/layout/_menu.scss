@@ -1,4 +1,9 @@
 
+.card{
+  @include flex(flex, center, center, 20px,wrap);
+  background-color: $color-base;
+  margin: 1rem 1rem;
+}
 .card-img-top{
     padding: 0.7rem;    
   }

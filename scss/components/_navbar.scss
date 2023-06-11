@@ -1,15 +1,14 @@
 header{
     width: 100%;
-    margin: 100%;
+    margin: 0;
     font-size: 1rem;
     background-color: $color-base;
     .nav-wraper{
-        width: 100%;
-        margin: auto;
+      width: 100%;
+      @include flex (flex, space-between,center, 10px,wrap);
       }
-      nav{
-        @include flex (flex, space-between,center, 10px, wrap);
-      }
+      padding: 0 20px;
+      margin: 0;
        &:hover {
         color: black;
       }
@@ -21,12 +20,15 @@ header{
   }
   .menu ul{
     list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    gap: 1rem;
     li a{
         text-decoration: none;
+        padding: 10px;
         font-size: 20px;
-        color: $font-color;    
+        color: $font-color; 
+        margin-right: 10px;   
       }
   }
 }

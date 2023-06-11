@@ -1,7 +1,7 @@
 footer{
+  @include flex (column,center,center,20px,wrap);
   width: 100%;
   color: $color-base;
   text-align: center;
-  @include flex (column,center,center,20px,wrap);
 }
   

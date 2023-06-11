@@ -17,15 +17,13 @@ body {
 
 header {
   width: 100%;
-  margin: auto;
+  margin: 100%;
   font-size: 1rem;
   background-color: #DCDDB6;
-  padding: 0.5rem;
 }
 header .nav-wraper {
   width: 100%;
   margin: auto;
-  padding: 1rem;
 }
 header nav {
   display: flex;
@@ -48,7 +46,6 @@ header .menu ul {
   list-style: none;
   display: flex;
   gap: 1rem;
-  padding: 0rem 5rem;
 }
 header .menu ul li a {
   text-decoration: none;
@@ -60,17 +57,32 @@ nav #toggle, nav label {
   display: none;
 }
 
-@media (max-width: 768px) {
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  color: #DCDDB6;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
   nav .menu {
     width: 100%;
+    margin: auto;
     height: 0;
     overflow: hidden;
   }
-  .menu ul {
-    flex-direction: column;
+  ul {
+    display: flex;
+    flex-direction: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    padding: 2rem 0;
+    gap: 10px;
+    flex-wrap: wrap;
   }
   nav label {
     display: inline-flex;
@@ -81,58 +93,56 @@ nav #toggle, nav label {
     height: 100%;
   }
 }
-footer {
-  width: 100%;
-  color: #DCDDB6;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
+@media only screen and (max-width: 480px) {
+  nav .menu {
+    width: 100%;
+    margin: auto;
+    height: 0;
+    overflow: hidden;
+  }
+  ul {
+    display: flex;
+    flex-direction: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  nav label {
+    display: inline-flex;
+    color: black;
+    cursor: pointer;
+  }
+  nav #toggle:checked ~ .menu {
+    height: 100%;
+  }
 }
-
-.card-img-top {
-  padding: 0.7rem;
-}
-
-.card-body {
-  text-align: center;
-}
-.card-body .card-title {
-  font-size: 25px;
-}
-
 /* Main section styles */
-section {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-section .nuestraCocina {
+.sectioncocina {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 15px;
   flex-wrap: wrap;
+  padding-top: 40px;
+  padding-bottom: 40px;
   background-color: #DCDDB6;
-  padding: 2rem;
   border-radius: 5px;
   box-shadow: 0px 2px 5px rgba(135, 133, 100, 0.1);
 }
-section .nuestraCocina h2 {
+.sectioncocina h2 {
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 20px;
 }
-section .nuestraCocina p {
+.sectioncocina p {
   font-size: 1.2rem;
   line-height: 1.5;
   text-align: center;
   margin-bottom: 20px;
 }
-section .nuestraCocina h3 {
+.sectioncocina h3 {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
@@ -247,18 +257,14 @@ form input[type=reset]:hover {
   transform: scale(1.1);
 }
 
-.card {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  background-color: #DCDDB6;
-}
-.card .card-img-top {
+.card-img-top {
   padding: 0.7rem;
 }
-.card .card-body {
+
+.card-body {
   text-align: center;
 }
-.card .card-body .card-title {
+.card-body .card-title {
   font-size: 25px;
 }
 

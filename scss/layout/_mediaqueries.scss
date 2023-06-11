@@ -1,4 +1,40 @@
-@mixin mobile{
-    @media screen {max-width: 768px}
-        @content;
-    } 
+
+//nav-bar//
+    @media only screen and (max-width: 768px){
+    nav .menu{
+        width: 100%;
+        margin: auto;
+        height: 0;
+        overflow: hidden;
+    }
+    ul{
+        @include flex (flex, space-between,center, 10px, wrap);
+    }
+    nav label{
+        display: inline-flex;
+        color: $font-color;
+        cursor: pointer;
+    }
+    nav #toggle:checked ~ .menu{
+        height: 100%;
+    }
+  }
+  @media only screen and (max-width: 480px){
+    nav .menu{
+        width: 100%;
+        margin: auto;
+        height: 0;
+        overflow: hidden;
+    }
+    ul{
+        @include flex (flex, space-between,center, 10px, wrap);
+    }
+    nav label{
+        display: inline-flex;
+        color: $font-color;
+        cursor: pointer;
+    }
+    nav #toggle:checked ~ .menu{
+        height: 100%;
+    }
+  }
